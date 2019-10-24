@@ -25,7 +25,10 @@
     <ion-row>
       <ion-col>
         <ion-item>
-          <ion-input [placeholder]="'First Name'"></ion-input>
+          <ion-input
+                  [placeholder]="'First Name'"
+
+          ></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -246,7 +249,9 @@
     <ion-row>
       <ion-col>
         <ion-item>
-          <ion-input [placeholder]="'Sixth Name'"></ion-input>
+          <ion-input [placeholder]="'Sixth Name'"
+                     (click)="compareBodyAndContent()"
+          ></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -255,6 +260,8 @@
       <button>
         SUBMIT
       </button>
+      <p>Content height: {{contentHeight}}</p>
+      <p>Window height: {{windowHeight}}</p>
     </ion-row>
   </ion-grid>
 </ion-content>
