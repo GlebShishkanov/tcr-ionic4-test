@@ -1,12 +1,18 @@
 .afterKeyboardActive{
   max-height: 710px;
   background-color: #d33939;
-  color: red;
+  margin-bottom: 200px;
+  ion-grid{
+    color: red;
+  }
+
 }
 .beforeKeyboardActive{
   height: auto;
   background-color: #0bb8cc;
-  color: blue;
+  ion-grid{
+    color: blue;
+  }
 }
 
 
