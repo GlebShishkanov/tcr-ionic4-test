@@ -9,7 +9,7 @@ export class HomePage {
     body = document.body;
     html = document.documentElement;
     contentHeight: any;
-    equalScreenheight: boolean;
+    equalScreenHeight: boolean;
     windowHeight: any;
 
   constructor() {}
@@ -29,9 +29,10 @@ export class HomePage {
       this.getContentHeight();
       this.getWindowHeight();
       if (this.windowHeight === this.contentHeight ) {
-          this.equalScreenheight = true;
+          this.equalScreenHeight = true;
       } else {
-          this.equalScreenheight = false;
+          this.equalScreenHeight = false;
       }
+      console.log(this.equalScreenHeight);
   }
 }
